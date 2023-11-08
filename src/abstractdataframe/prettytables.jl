@@ -26,7 +26,7 @@ function _pretty_tables_highlighter_func(data, i::Integer, j::Integer)
 end
 
 const _PRETTY_TABLES_HIGHLIGHTER = Highlighter(_pretty_tables_highlighter_func,
-                                               Crayon(foreground = :dark_gray))
+                                               Crayon(foreground = (127,127,127)))
 
 const _PRETTY_TABLES_HTML_HIGHLIGHTER = HtmlHighlighter(_pretty_tables_highlighter_func,
                                                         HtmlDecoration(font_style = "italic"))
